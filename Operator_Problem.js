@@ -18,13 +18,9 @@ function solve(arr) {
   //   if (operator === "AND") {
   //     return ` (${newArr.join(operator)}) `;
   //   }
-  
+
   return ` (${newArr.join(operator)}) `;
 }
-
-
-
-
 
 //METHOD 2: OPERATOR PROBLEM WITH STACK
 
