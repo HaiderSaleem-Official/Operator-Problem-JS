@@ -11,15 +11,10 @@ function solve(arr) {
   }
 
   let operator = arr[0];
-  let newArr = [];
+  let operand1 = solve(arr[1]);
+  let operand2 = solve(arr[2]);
 
-  newArr.push(solve(arr[1]));
-  newArr.push(solve(arr[2]));
-  //   if (operator === "AND") {
-  //     return ` (${newArr.join(operator)}) `;
-  //   }
-
-  return ` (${newArr.join(operator)}) `;
+  return ` (${operand1 + operator + operand2}) `;
 }
 
 //METHOD 2: OPERATOR PROBLEM WITH STACK
