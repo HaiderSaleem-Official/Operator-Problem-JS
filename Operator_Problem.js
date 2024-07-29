@@ -15,11 +15,15 @@ function solve(arr) {
 
   newArr.push(solve(arr[1]));
   newArr.push(solve(arr[2]));
-  if (operator === "AND") {
-    return ` (${newArr.join(operator)}) `;
-  }
+  //   if (operator === "AND") {
+  //     return ` (${newArr.join(operator)}) `;
+  //   }
   return ` (${newArr.join(operator)}) `;
 }
+
+
+
+
 
 //METHOD 2: OPERATOR PROBLEM WITH STACK
 
@@ -56,7 +60,7 @@ function stack_sol(arr) {
 
 // MEHTOD 1
 const result = solve(nestedArray);
-console.log(result,'\n');
+console.log(result, "\n");
 
 // METHOD 2
 stack_sol(nestedArray);
